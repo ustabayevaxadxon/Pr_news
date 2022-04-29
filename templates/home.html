@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to Home Page</h1>
+    <ul>
+        {% for post in  object_list %}
+            <li>{{ post.title }}</li>
+            <ul>
+                <li>{{ post.body }}</li>
+            </ul>
+        {% endfor %}
+    </ul>
+</body>
+</html>
