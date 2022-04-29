@@ -6,10 +6,10 @@
 </head>
 <body>
     <h1>Welcome to Home Page</h1>
-    <ul>
+    <ul style="list-style: circle">
         {% for post in  object_list %}
             <li>{{ post.title }}</li>
-            <ul>
+            <ul style="list-style: none">
                 <li>{{ post.body }}</li>
             </ul>
         {% endfor %}
